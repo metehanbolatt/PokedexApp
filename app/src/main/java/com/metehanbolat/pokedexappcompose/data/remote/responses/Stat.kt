@@ -1,7 +1,10 @@
 package com.metehanbolat.pokedexappcompose.data.remote.responses
 
+import com.google.gson.annotations.SerializedName
+
 data class Stat(
-    val base_stat: Int?,
-    val effort: Int?,
-    val stat: StatX?
+    @SerializedName("base_stat")
+    val baseStat: Int,
+    val effort: Int,
+    val stat: StatX
 )

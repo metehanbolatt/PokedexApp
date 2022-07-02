@@ -1,6 +1,9 @@
 package com.metehanbolat.pokedexappcompose.data.remote.responses
 
+import com.google.gson.annotations.SerializedName
+
 data class GenerationI(
-    val red-blue: RedBlue?,
-    val yellow: Yellow?
+    @SerializedName("red-blue")
+    val redBlue: RedBlue,
+    val yellow: Yellow
 )

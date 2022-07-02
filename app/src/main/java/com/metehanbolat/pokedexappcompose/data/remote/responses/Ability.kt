@@ -1,7 +1,10 @@
 package com.metehanbolat.pokedexappcompose.data.remote.responses
 
+import com.google.gson.annotations.SerializedName
+
 data class Ability(
-    val ability: AbilityX?,
-    val is_hidden: Boolean?,
-    val slot: Int?
+    val ability: AbilityX,
+    @SerializedName("is_hidden")
+    val isHidden: Boolean,
+    val slot: Int
 )

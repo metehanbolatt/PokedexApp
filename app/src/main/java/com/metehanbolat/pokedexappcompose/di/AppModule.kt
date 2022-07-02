@@ -30,4 +30,5 @@ object AppModule {
             .build()
             .create(PokeApi::class.java)
     }
+
 }

@@ -1,7 +1,11 @@
 package com.metehanbolat.pokedexappcompose.data.remote.responses
 
+import com.google.gson.annotations.SerializedName
+
 data class GenerationIv(
-    val diamond-pearl: DiamondPearl?,
-    val heartgold-soulsilver: HeartgoldSoulsilver?,
-    val platinum: Platinum?
+    @SerializedName("diamond-pearl")
+    val diamondPearl: DiamondPearl,
+    @SerializedName("heartgold-soulsilver")
+    val heartgoldSoulsilver: HeartgoldSoulsilver,
+    val platinum: Platinum
 )
